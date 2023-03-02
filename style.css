@@ -1,0 +1,327 @@
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: 'PT Sans', sans-serif;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+}
+/* this global reset was found in an article by Jeff Star, and can be found at
+https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+img {
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    border-top: ridge 3px #EED7C5;
+    border-left: ridge 3px #C89F9C;
+    border-bottom: ridge 3px #C97C5D;
+    border-right: ridge 3px #B36A5E;
+}
+
+body {
+    margin-top:5px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.borderColors {
+    border-top: ridge 9px #EED7C5;
+    border-left: ridge 9px #C89F9C;
+    border-bottom: ridge 9px #C97C5D;
+    border-right: ridge 9px #B36A5E;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+.header > img {
+  border-radius: 50%;
+  width: 180px;
+}  
+
+.brand {
+    width:500px;
+    height: 36px;
+    border-bottom: solid 2px #B36A5E;
+    margin-bottom: 12px;
+}
+
+.brand > h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #B36A5E;
+}
+
+@media only screen and (min-width: 640px) {
+.navBar-Container {
+    margin-top:20px;
+    margin-bottom:10px;
+    min-width: 300px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap:2em;
+}
+}
+@media only screen and (max-width: 640px) {
+    .navBar-Container {
+        margin-top:20px;
+        margin-bottom:10px;
+        min-width: 300px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:.5em;
+        flex-direction: column;
+    }
+    }
+
+.navItem {
+    cursor: pointer;
+}
+
+.navItem:hover {
+background-color: #B36A5E;
+color: white;
+border-radius: 10px;
+font-weight: 500;
+padding: 0px 5px;
+}
+
+#aboutUs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+#aboutUs > h1 {
+    text-align: center;
+    width:100%;
+    font-size: 26px;
+    background-color: #EED7C5;
+    color: #B36A5E;
+}
+
+.bethany {
+    border-radius: 15px;
+    margin:3px;
+    width: 280px !important;
+    height: 280px !important;
+}
+
+.aboutUsBox {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .aboutUsBox {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 640px) {
+    .aboutUsBox {
+        max-width: 750px;
+    }
+}
+
+.aboutUs-Text {
+    max-width: 550px;
+    margin:20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .sectionContainer {
+        flex-direction: column;
+        width:90%
+    }
+}
+@media only screen and (min-width: 640px) {
+    .sectionContainer {
+        max-width: 750px;
+    }
+}
+
+#ourProgram {
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#ourProgram > img {
+    height:215px;
+    border-radius: 15px;
+}
+
+#ourDogs {
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    min-height: 450px;
+}
+
+.dogPhotoContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.dogPhotoContainer > * > * > img {
+    width:240px;
+    border-radius: 15px;
+    gap:.5em; 
+    margin: 3px;
+}
+
+#currentLitters {
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 19px;
+}
+
+.currentLitters-Text > p{
+    margin:20px;
+}
+
+#currentLitters > img {
+    height:215px;
+    border-radius:15px;
+}
+
+#pastLitters {
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#pastLitters > img {
+    min-height:230px;
+    border-radius:15px;
+}
+
+#futureLitters {
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#futureLitters > img {
+    height:215px;
+    border-radius:15px;
+}
+
+#FAQ {
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#FAQ > img {
+    height:215px;
+    border-radius:15px;
+}
+
+.sonaSlides, .koeySlides, .havenSlides, .currentLitterSlides, .pastLitterSlides {display: none;}
+img {vertical-align: middle;}
+
+.pastLitterSlides {
+    min-width:215px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+/* The dots/bullets/indicators */
+.dotSona {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotKoey {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dotHaven {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dotCurrent {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
