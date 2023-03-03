@@ -8,6 +8,7 @@ border: 0 none;
 outline: 0;
 padding: 0;
 margin: 0;
+cursor: url('assets/dogpaw1.png'), auto;
 }
 /* this global reset was found in an article by Jeff Star, and can be found at
 https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
@@ -15,11 +16,47 @@ https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 img {
-    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    height: 330px;
+    margin: 8px;
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
     border-top: ridge 3px #EED7C5;
     border-left: ridge 3px #C89F9C;
     border-bottom: ridge 3px #C97C5D;
     border-right: ridge 3px #B36A5E;
+}
+
+.upButton {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border:solid 3px #C89F9C;
+    position:fixed;
+    top:5%;
+    left:80%;
+}
+
+.fbLogo {
+    width:30px;
+    height:30px;
+    margin-top:25px;
+}
+
+.fbLogo:hover {
+    background-color: #EED7C5;
+    border:#B36A5E solid 3px;
+}
+
+.upButton:hover {
+    background-color: #EED7C5;
+}
+
+.largeIMG {
+    height:430px;
+}
+
+.medIMG {
+    height:370px;
 }
 
 body {
@@ -30,6 +67,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+p {
+    margin: 4px;
 }
 
 .borderColors {
@@ -44,12 +85,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom:30px;
+    margin-bottom:1px;
 }
 
 .header > img {
   border-radius: 50%;
   width: 180px;
+  height:180px;
 }  
 
 .brand {
@@ -72,9 +114,19 @@ body {
     color: #B36A5E;
 }
 
+@media only screen and (max-width: 640px) {
+    .needShrink {
+        flex-direction: column;
+    }
+}
+
+.navItem{
+    font-size: 14px;
+}
+
 @media only screen and (min-width: 640px) {
 .navBar-Container {
-    margin-top:20px;
+    margin-top:10px;
     margin-bottom:10px;
     min-width: 300px;
     display:flex;
@@ -86,7 +138,7 @@ body {
 }
 @media only screen and (max-width: 640px) {
     .navBar-Container {
-        margin-top:20px;
+        margin-top:10px;
         margin-bottom:10px;
         min-width: 300px;
         display:flex;
@@ -97,10 +149,6 @@ body {
     }
     }
 
-.navItem {
-    cursor: pointer;
-}
-
 .navItem:hover {
 background-color: #B36A5E;
 color: white;
@@ -109,83 +157,54 @@ font-weight: 500;
 padding: 0px 5px;
 }
 
-#aboutUs {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
+.sectionContainer {
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
-#aboutUs > h1 {
+@media only screen and (max-width: 640px) {
+    .sectionContainer {
+        width:90%;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .sectionContainer {
+        max-width: 750px;
+    }
+}
+
+.cardTitle {
     text-align: center;
     width:100%;
     font-size: 26px;
     background-color: #EED7C5;
     color: #B36A5E;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.bethany {
-    border-radius: 15px;
-    margin:3px;
-    width: 280px !important;
-    height: 280px !important;
-}
-
-.aboutUsBox {
-    display: flex;
+.cardContents {
+    display:flex;
+    justify-content: space-around;
     align-items: center;
+    gap: .2em;
 }
 
-@media only screen and (max-width: 640px) {
-    .aboutUsBox {
-        flex-direction: column;
-    }
-}
-@media only screen and (min-width: 640px) {
-    .aboutUsBox {
-        max-width: 750px;
-    }
+.cardText {
+    margin: 10px;
+    text-align: justify;
 }
 
-.aboutUs-Text {
-    max-width: 550px;
-    margin:20px;
-    text-align: center;
-}
-
-@media only screen and (max-width: 640px) {
-    .sectionContainer {
-        flex-direction: column;
-        width:90%
-    }
-}
-@media only screen and (min-width: 640px) {
-    .sectionContainer {
-        max-width: 750px;
-    }
-}
-
-#ourProgram {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#ourProgram > img {
-    height:215px;
-    border-radius: 15px;
-}
-
-#ourDogs {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-start;
+.column {
     flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    min-height: 450px;
+}
+
+.dogText {
+    font-size: 38px;
+    text-decoration: underline;
+    color: #B36A5E;
+    font-family: Accordance;
+    margin: 5px;
 }
 
 .dogPhotoContainer{
@@ -194,67 +213,9 @@ padding: 0px 5px;
 
 }
 .dogPhotoContainer > * > * > img {
-    width:240px;
     border-radius: 15px;
     gap:.5em; 
     margin: 3px;
-}
-
-#currentLitters {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15px;
-    font-size: 19px;
-}
-
-.currentLitters-Text > p{
-    margin:20px;
-}
-
-#currentLitters > img {
-    height:215px;
-    border-radius:15px;
-}
-
-#pastLitters {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#pastLitters > img {
-    min-height:230px;
-    border-radius:15px;
-}
-
-#futureLitters {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#futureLitters > img {
-    height:215px;
-    border-radius:15px;
-}
-
-#FAQ {
-    margin-top:20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#FAQ > img {
-    height:215px;
-    border-radius:15px;
 }
 
 .sonaSlides, .koeySlides, .havenSlides, .currentLitterSlides, .pastLitterSlides {display: none;}
@@ -324,4 +285,40 @@ img {vertical-align: middle;}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+#FAQ {
+    border-radius: 15px;
+    border: solid 2px #B36A5E;
+}
+
+.question {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #B36A5E;
+    text-align: left;
+}
+
+
+input, textarea {
+    border: solid 2px #B36A5E;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width:300px;
+}
+
+.review {
+    color: #C97C5D;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin-top:20px;
+}
+
+@media only screen and (max-width: 640px) {
+    .review {
+        font-size: 12px;
+    }
 }

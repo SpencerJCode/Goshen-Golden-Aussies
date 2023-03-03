@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -10,20 +10,29 @@
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
     </style>
     <title>Sweet Baby Kennels</title>
-    <!-- <description>A massive undertaking begun in 2019, Sweet Baby Kennels exists to glorify God by breeding beautiful,
-        family-friendly Golden Aussie puppies. We love the lines we've produced, and we love the lives we've changed!
-    </description> -->
-</head>
+    <meta name="keywords" content="Golden, Aussie, Aussies, Golden-Aussie, Golden-Aussies, Australian, Retriever, Puppies, Kennel, Kennels, Dog, Dogs, Breeder, Ethical, Puppy, Culture">
+    <meta name="description" content="A massive undertaking begun in 2019, Sweet Baby Kennels exists to glorify God by breeding beautiful,
+        family-friendly Golden Aussie puppies. We love the lines we've produced, and we love the lives we've changed!">
+        <meta name="author" content="Spencer Johnson">
+    </head>
 
 <body>
-    <div class="header">
+    <!-- Produces a button with a Paw Print background. Clicking this button returns the viewer to the very top of the web page -->
+    <img src="assets/pawprintbutton.png" class="upButton" alt="Return to Top"
+        onClick="document.getElementById('header').scrollIntoView({ behavior: 'smooth'});">
+
+        <!-- Header section. Includes the main logo, name of the kennel, a slogan, and a link to the company Facebook page -->
+    <div class="header" id="header">
         <img src="assets/logo.png" alt="Kennel Logo" class="borderColors">
         <div class="brand">
             <h2>Sweet Baby Kennels</h2>
-            <div class="slogan"><em>"Together, let's make family-friendly dogs! You bring the family, and we'll bring
-                    the friendly!"</em></div>
+            <div class="slogan"><em>"...you bred the perfect dog!" -L.M.</em></div>
         </div>
+        <!-- Button to jump to the Facebook page -->
+        <a href="https://www.facebook.com/GoldenAussies/" target="_blank"><img src="assets/fbicon.png"
+                class="fbLogo" alt="Facebook Logo"></a>
     </div>
+    <!-- Navigation bar menu items -->
     <div class="navBar-Container">
         <h3 class="navItem" onClick="document.getElementById('aboutUs').scrollIntoView({ behavior: 'smooth'});">About Us
         </h3>
@@ -38,168 +47,225 @@
         <h3 class="navItem" onClick="document.getElementById('futureLitters').scrollIntoView({ behavior: 'smooth'});">
             Future Litters</h3>
         <h3 class="navItem" onClick="document.getElementById('FAQ').scrollIntoView({ behavior: 'smooth'});">FAQ</h3>
+        <h3 class="navItem" onClick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth'});">Contact
+            Us</h3>
     </div>
+<!-- The "About Us" section of the website. -->
     <div id="aboutUs" class="sectionContainer borderColors">
-        <h1>About Us</h1>
-        <div class="aboutUsBox">
-        <img src="assets/bethany.png" alt="Bethany" class="bethany">
-        <div class="aboutUs-Text">
-            <p>Hello! My name is Bethany and I am the proud founder of Sweet Baby Kennels located near South Hill,
-                VA.<br> I fell in love with the
-                idea of Golden Aussies over 3 years ago. We carefully selected our Sona (Australian Shepherd) knowing we
-                were hoping to one day breed her and that she would be our foundation dog who would launch us into
-                breeding
-                2nd, 3rd, and even 4th generation Golden Aussies. Temperament was our first concern and Sona is an
-                incredible, loving girl with little herding drive and
-                is not neurotic, which can be two of the biggest concerns with Aussies as family dogs. She is medium
-                energy, smart, and loves everyone who comes in the door. We've endeavoured to start our program with
-                good quality dogs who are both registered with the American
-                Kennel Club (AKC) since it's known as one of the most prestigious registries in North America. All
-                parents have been health tested through Embark to help ensure our lines represent the best of the breed.
-            </p>
-        </div>
+        <h1 class="cardTitle">About Us</h1>
+        <div class="cardContents needShrink">
+            <img src="assets/bethany.png" alt="Bethany">
+            <div class="cardText">
+                <p>Hello! My name is Bethany and I am the proud founder of Sweet Baby Kennels located near South Hill,
+                    VA.</p><br>
+                <p>I fell in love with the
+                    idea of Golden Aussies over 3 years ago. We carefully selected our Sona (Australian Shepherd)
+                    knowing we
+                    were hoping to one day breed her and that she would be our foundation dog who would launch us into
+                    breeding
+                    2nd, 3rd, and even 4th generation Golden Aussies. Temperament was our first concern and Sona is an
+                    incredible, loving girl with little herding drive and
+                    is not neurotic, which can be two of the biggest concerns with Aussies as family dogs. She is medium
+                    energy, smart, and loves everyone who comes in the door. We've endeavoured to start our program with
+                    good quality dogs who are both registered with the American
+                    Kennel Club (AKC) since it's known as one of the most prestigious registries in North America. All
+                    parents have been health tested through Embark to help ensure our lines represent the best of the
+                    breed.
+                </p>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- The "Our Program" section of the website. -->
     <div id="ourProgram" class="sectionContainer borderColors">
-        <div class="ourProgram-Text">
-            <p>Since our goal is to produce wonderful family dogs, we’ll be raising our litters with many of the *Puppy
-                Culture™ and Empowered Breeder’s protocols to give our puppies a solid foundation. Exposing very young
-                puppies to brief and mildly stressful desensitization protocols stimulates their hormonal, adrenal, and
-                pituitary systems, priming a more balanced response to future stressors. This includes ENS (Early
-                Neurological stimulation), early litter training to help with potty training, introduction to crate
-                training, and exposure to many sounds and new experiences like going for car rides and being well
-                socialized. I've done Puppy Culture with my last two litters and I believe it's really set my pups apart
-                from many. I've recently learned about the Empowered Breeder's Program which has been designed to help
-                produce service and therapy dogs. I believe it will further help our pups go into any situation. Both
-                programs are quite similar, but the Empowered Breeder's Program aligns with my philosophy a little
-                better.Our puppies are raised in our home amongst the hustle and bustle of a busy family’s life. We also
-                plan on providing them with carefully planned socialization exercises and experiences throughout their
-                first
-                eight weeks, the intended goal to produce healthy, well-balanced puppies for our buyers. Our puppies are
-                indoor litter trained, which most fully master before going to their new homes, making
-                outdoor potty training much easier for their owners. We also introduce our puppies to the crate and car
-                rides in order to provide as smooth a transition to their new homes as possible. We regularly provide
-                updates on the puppies' progress throughout their
-                first eight weeks, giving our buyers insight into the puppies' personalities, as well as a glimpse into
-                how much time and energy we
-                invest in each litter. None of the above is to imply they are perfectly trained/acclimated before going
-                home, but our puppies and their new owners undoubtedly benefit significantly from our carefully planned
-                and dedicated efforts.
-                Each puppy leaves with transitional puppy food, a collar, toy, and a comfort blanket with its mother’s
-                and siblings’ scent to ease the transition to his or her new home, and other useful items. Puppies are
-                also microchipped with an AKC Reunite chip with a prepaid, lifetime enrollment. This means
-                new owners will face no sign up fee and no annual fee for the entirety of their dog's life.
-            </p>
+        <h1 class="cardTitle">Our Program</h1>
+        <div class="cardContents column">
+            <div class="cardText">
+                <p>Since our goal is to produce wonderful family dogs, we’ll be raising our litters with many of the
+                    *Puppy
+                    Culture™ and Empowered Breeder’s protocols to give our puppies a solid foundation. Exposing very
+                    young
+                    puppies to brief and mildly stressful desensitization protocols stimulates their hormonal, adrenal,
+                    and
+                    pituitary systems, priming a more balanced response to future stressors. This includes ENS (Early
+                    Neurological stimulation), early litter training to help with potty training, introduction to crate
+                    training, and exposure to many sounds and new experiences like going for car rides and being well
+                    socialized. I've done Puppy Culture with my last two litters and I believe it's really set my pups
+                    apart
+                    from many. I've recently learned about the Empowered Breeder's Program which has been designed to
+                    help
+                    produce service and therapy dogs. I believe it will further help our pups go into any situation.
+                    Both
+                    programs are quite similar, but the Empowered Breeder's Program aligns with my philosophy a little
+                    better.</p>
+            </div>
+            <img src="assets/Calgary.png" alt="Calgary" class="largeIMG">
+            <div class="cardText">
+                <p>Our puppies are raised in our home amongst the hustle and bustle of a busy family’s life. We
+                    also
+                    plan on providing them with carefully planned socialization exercises and experiences throughout
+                    their
+                    first
+                    eight weeks, the intended goal to produce healthy, well-balanced puppies for our buyers. Our puppies
+                    are
+                    indoor litter trained, which most fully master before going to their new homes, making
+                    outdoor potty training much easier for their owners. We also introduce our puppies to the crate and
+                    car
+                    rides in order to provide as smooth a transition to their new homes as possible. We regularly
+                    provide
+                    updates on the puppies' progress throughout their
+                    first eight weeks, giving our buyers insight into the puppies' personalities, as well as a glimpse
+                    into
+                    how much time and energy we
+                    invest in each litter. None of the above is to imply they are perfectly trained/acclimated before
+                    going
+                    home, but our puppies and their new owners undoubtedly benefit significantly from our carefully
+                    planned
+                    and dedicated efforts.
+                    Each puppy leaves with transitional puppy food, a collar, toy, and a comfort blanket with its
+                    mother’s
+                    and siblings’ scent to ease the transition to his or her new home, and other useful items. Puppies
+                    are
+                    also microchipped with an AKC Reunite chip with a prepaid, lifetime enrollment. This means
+                    new owners will face no sign up fee and no annual fee for the entirety of their dog's life.
+                </p>
+            </div>
         </div>
-        <img src="assets/Calgary.png" alt="Calgary">
     </div>
 
+    <!-- The "Our Dogs" section of the website. -->
     <div id="ourDogs" class="sectionContainer borderColors">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minima quidem impedit? Molestiae ratione
-            exercitationem vitae voluptatem dicta sit. Saepe dicta dolor voluptatem error adipisci nisi id! Aspernatur,
-            qui doloremque?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minima quidem impedit? Molestiae ratione
-            exercitationem vitae voluptatem dicta sit. Saepe dicta dolor voluptatem error adipisci nisi id! Aspernatur,
-            qui doloremque?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minima quidem impedit? Molestiae ratione
-            exercitationem vitae voluptatem dicta sit. Saepe dicta dolor voluptatem error adipisci nisi id! Aspernatur,
-            qui doloremque?</p>
+        <h1 class="cardTitle">Our Breeding Dogs</h1>
+        <div class="cardContents column">
+            <div class="cardText">
+                <p>Our breeding stock currently includes four dogs: three female and one male. Of these four, only one
+                    is old enough to breed, is a pure-bred Australian Shepherd, and is currently on her third litter.
+                    The other two, Koey and Haven, are puppies of Sona's from previous litters, and are first generation
+                    Golden Aussies.</p>
+                <p>The fourth is our most recent addition, a "black-tri" Golden Aussie from amazing lines in Canada, who
+                    will serve as a stud for the majority of future litters when he is of age. </p>
+                <p>We have lots of photos of our breeding stock below, so feel free to read more and see some photos of
+                    our girls!</p>
+            </div>
+            <div class="dogText" id="Sona">Sona</div>
+            <div class="cardText">
+                <p>Sona is the queen of the program, our very first, and the dog who started our Golden Aussie program.
+                    We purchased her because we were looking for a wonderful, family-friendly "blue-merle" Aussie with a
+                    clean genetic profile to start our lines, and could not have asked for a better matriach. When she
+                    retires from our program, she will be promoted to lap-dog and spend her days watching her
+                    great-great-great grandchildren grow up among us.</p>
+            </div>
+            <!-- A photo carousel of images just for the above dog. -->
+            <div class="dogPhotoContainer">
+                <div class="slideshow-container">
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona4.png" alt="Picture of Sona">
+                    </div>
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona2.png" alt="Picture of Sona">
+                    </div>
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona3.png" alt="Picture of Sona">
+                    </div>
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona5.png" alt="Picture of Sona">
+                    </div>
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona6.png" alt="Picture of Sona">
+                    </div>
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona7.png" alt="Picture of Sona">
+                    </div>
+                    <div class="sonaSlides fade">
+                        <img src="/assets/sona0.png" alt="Picture of Sona">
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dotSona"></span>
+                    <span class="dotSona"></span>
+                    <span class="dotSona"></span>
+                    <span class="dotSona"></span>
+                    <span class="dotSona"></span>
+                    <span class="dotSona"></span>
+                    <span class="dotSona"></span>
+                </div>
 
-        <div class="dogText" id="Sona">Sona</div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minima quidem impedit? Molestiae ratione
-            exercitationem vitae voluptatem dicta sit. Saepe dicta dolor voluptatem error adipisci nisi id! Aspernatur,
-            qui doloremque?</p>
-
-        <div class="dogPhotoContainer">
-            <div class="slideshow-container">
-                <div class="sonaSlides fade">
-                    <img src="/assets/sona4.png">
+            </div>
+            <div class="dogText">Koey</div>
+            <div class="cardText">
+                <p>Oh my beating heart! She stole our affections very early in Sona's first litter, and we just had to
+                    keep her. Her body style leans heavily toward Golden Retriever, as does her coat style and severe
+                    interest in carrying things around in her mouth proudly. She also has this really sweet tendency to
+                    sit cross-legged on the floor as if she's some kind of model. Any crosses between Koey and another
+                    Golden Aussie will yield second-generation Golden Aussies. She was "Winter" in our "Famous TV
+                    Animals litter.</p>
+            </div>
+                        <!-- A photo carousel of images just for the above dog. -->
+            <div class="dogPhotoContainer">
+                <div class="slideshow-container">
+                    <div class="koeySlides fade">
+                        <img src="/assets/koey1.png" alt="Picture of Koey">
+                    </div>
+                    <div class="koeySlides fade">
+                        <img src="/assets/koey2.png" alt="Picture of Koey">
+                    </div>
+                    <div class="koeySlides fade">
+                        <img src="/assets/koey3.png" alt="Picture of Koey">
+                    </div>
+                    <div class="koeySlides fade">
+                        <img src="/assets/koey4.png" alt="Picture of Koey">
+                    </div>
                 </div>
-                <div class="sonaSlides fade">
-                    <img src="/assets/sona2.png">
-                </div>
-                <div class="sonaSlides fade">
-                    <img src="/assets/sona3.png">
-                </div>
-                <div class="sonaSlides fade">
-                    <img src="/assets/sona5.png">
-                </div>
-                <div class="sonaSlides fade">
-                    <img src="/assets/sona6.png">
-                </div>
-                <div class="sonaSlides fade">
-                    <img src="/assets/sona7.png">
+                <br>
+                <div style="text-align:center">
+                    <span class="dotKoey"></span>
+                    <span class="dotKoey"></span>
+                    <span class="dotKoey"></span>
+                    <span class="dotKoey"></span>
                 </div>
             </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dotSona"></span>
-                <span class="dotSona"></span>
-                <span class="dotSona"></span>
-                <span class="dotSona"></span>
-                <span class="dotSona"></span>
-                <span class="dotSona"></span>
+            <div class="dogText">Haven</div>
+            <div class="cardText">
+                <p>Sometimes you can just tell a dog is special. Haven played tug-o-war with our hearts when she was a
+                    puppy and inspired us to keep her even though we weren't planning on keeping a puppy from her
+                    litter. She is of slightly smaller body size, a clean mixing of Golden Retriver/Australian Shepherd
+                    body style and coat type, is incredibly submissive and tender, and will bring the most darling of
+                    characteristics into our program when she comes of age. Until then, she bides her time playing with
+                    our current litters and wetting everyone's faces. And hands. And socks. She was "Sea Side" in our
+                    "Dominion Expansions" litter.</p>
             </div>
-
-        </div>
-        <div class="dogText">Koey</div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minima quidem impedit? Molestiae ratione
-            exercitationem vitae voluptatem dicta sit. Saepe dicta dolor voluptatem error adipisci nisi id! Aspernatur,
-            qui doloremque?</p>
-
-        <div class="dogPhotoContainer">
-            <div class="slideshow-container">
-                <div class="koeySlides fade">
-                    <img src="/assets/koey1.png">
+                        <!-- A photo carousel of images just for the above dog. -->
+            <div class="dogPhotoContainer">
+                <div class="slideshow-container">
+                    <div class="havenSlides fade">
+                        <img src="/assets/haven1.png" alt="Picture of Haven">
+                    </div>
+                    <div class="havenSlides fade">
+                        <img src="/assets/haven2.png" alt="Picture of Haven">
+                    </div>
+                    <div class="havenSlides fade">
+                        <img src="/assets/haven3.png" alt="Picture of Haven">
+                    </div>
+                    <div class="havenSlides fade">
+                        <img src="/assets/haven4.png" alt="Picture of Haven">
+                    </div>
                 </div>
-                <div class="koeySlides fade">
-                    <img src="/assets/koey2.png">
+                <br>
+                <div style="text-align:center">
+                    <span class="dotHaven"></span>
+                    <span class="dotHaven"></span>
+                    <span class="dotHaven"></span>
+                    <span class="dotHaven"></span>
                 </div>
-                <div class="koeySlides fade">
-                    <img src="/assets/koey3.png">
-                </div>
-                <div class="koeySlides fade">
-                    <img src="/assets/koey4.png">
-                </div>
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dotKoey"></span>
-                <span class="dotKoey"></span>
-                <span class="dotKoey"></span>
-                <span class="dotKoey"></span>
-            </div>
-        </div>
-        <div class="dogText">Haven</div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minima quidem impedit? Molestiae ratione
-            exercitationem vitae voluptatem dicta sit. Saepe dicta dolor voluptatem error adipisci nisi id! Aspernatur,
-            qui doloremque?</p>
-
-        <div class="dogPhotoContainer">
-            <div class="slideshow-container">
-                <div class="havenSlides fade">
-                    <img src="/assets/haven1.png">
-                </div>
-                <div class="havenSlides fade">
-                    <img src="/assets/haven2.png">
-                </div>
-                <div class="havenSlides fade">
-                    <img src="/assets/haven3.png">
-                </div>
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dotHaven"></span>
-                <span class="dotHaven"></span>
-                <span class="dotHaven"></span>
             </div>
         </div>
     </div>
 
+    <!-- The "Current Litters" section of the website. -->
     <div id="currentLitters" class="sectionContainer borderColors">
-        <div class="currentLitters-Text">
+        <h1 class="cardTitle">Current Litters</h1>
+        <div class="cardText">
             <p>Born on January 16th, our "Narnia" litter is currently available. Each pup is named after a famous
                 character from one of CS Lewis' Chronicles of Narnia books. The dam is <span
                     onClick="document.getElementById('Sona').scrollIntoView({ behavior: 'smooth'});"
@@ -208,31 +274,32 @@
                     style="color:#C97C5D">Brick</a>. Send us an email to find out what puppies are still available.
             </p>
         </div>
+        <!-- An image carousel showing pictures of current available puppies. -->
         <div class="dogPhotoContainer">
             <div class="slideshow-container">
                 <div class="currentLitterSlides fade">
-                    <img src="assets/lucy.png">
+                    <img src="assets/lucy.png" class="largeIMG" alt="Picture of Lucy">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/aravis.png">
+                    <img src="assets/aravis.png" class="largeIMG" alt="Picture of Aravis">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/princecaspian.png">
+                    <img src="assets/princecaspian.png" class="largeIMG" alt="Picture of Prince Caspian">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/queenhelen.png">
+                    <img src="assets/queenhelen.png" class="largeIMG" alt="Picture of Queen Helen">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/reepicheep.png">
+                    <img src="assets/reepicheep.png" class="largeIMG" alt="Picture of Reepicheep">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/bree.png">
+                    <img src="assets/bree.png" class="largeIMG" alt="Picture of Bree">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/mrtumnus.png">
+                    <img src="assets/mrtumnus.png" class="largeIMG" alt="Picture of Mr Tumnus">
                 </div>
                 <div class="currentLitterSlides fade">
-                    <img src="assets/mrsbeaver.png">
+                    <img src="assets/mrsbeaver.png" class="largeIMG" alt="Picture of Mrs Beaver">
                 </div>
             </div>
             <br>
@@ -249,72 +316,190 @@
         </div>
         <div style="color:white">1111111</div>
     </div>
-    <div id="pastLitters" class="sectionContainer">
+
+    <!-- The "Past Litters" section of the website. -->
+    <div id="pastLitters" class="sectionContainer borderColors">
+        <h1 class="cardTitle">Past Litters</h1>
+        <!-- An image carousel showing puppies from previous litters that have fully grown. -->
         <div class="dogPhotoContainer">
             <div class="slideshow-container">
                 <div class="pastLitterSlides fade">
-                    <img src="assets/adventure.png">
+                    <img src="assets/adventure.png" class="medIMG" alt="Picture of Adventure">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/ellie.png">
+                    <img src="assets/ellie.png" class="medIMG" alt="Picture of Ellie">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/flicka.png">
+                    <img src="assets/flicka.png" class="medIMG" alt="Picture of Flicka">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/hinterlands.png">
+                    <img src="assets/hinterlands.png" class="medIMG" alt="Picture of Hinterlands">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/menagerie.png">
+                    <img src="assets/menagerie.png" class="medIMG" alt="Picture of Menagerie">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/milo.png">
+                    <img src="assets/milo.png" class="medIMG" alt="Picture of Mile">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/po.png">
+                    <img src="assets/po.png" class="medIMG" alt="Picture of Po">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/prosperity.png">
+                    <img src="assets/prosperity.png" class="medIMG" alt="Picture of Prosperity">
                 </div>
                 <div class="pastLitterSlides fade">
-                    <img src="assets/willy.png">
+                    <img src="assets/willy.png" class="medIMG" alt="Picture of Willy">
                 </div>
             </div>
         </div>
-        <div class="pastLitter-Text">
-            <p>These are some photos of our past litters. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nobis
-                inventore voluptatem ea nemo vel aut id vero saepe sint consequuntur, hic magnam minima nisi ipsum nulla
-                quas optio cupiditate dignissimos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nostrum
-                vel sit. Voluptatem, pariatur impedit qui culpa sapiente laboriosam earum dicta mollitia eaque accusamus
-                optio dolores officia et cum a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro saepe a
-                labore nam quas suscipit atque quaerat. Hic illum explicabo perspiciatis dolor praesentium ea corporis
-                eius, temporibus perferendis vel eveniet.</p>
+        <div class="cardText">
+            <p style="text-align: center;">Photos of our past litters. <br> We absolutely love receiving photos and
+                updates from
+                previous litters. We truly love all of our puppies and it is delightful to see their progress as they
+                grow and hear from their new families about how their expierence has been, both with finding a new
+                companion through us, and with raising our puppies. Check out these reviews from those who received
+                puppies from us in the past!
+            </p>
+            <p class="review">"Working with Bethany to get our puppy, Kylo, was an excellent experience. One of my
+                primary concerns was matching with a puppy that would adjust well to living with our cat. Bethany helped
+                us pick a pup with a laid back demeanor and little chase drive. It was very easy to teach Kylo to leave
+                our cat to herself and now they get along well together. Kylo is a sweet pup who is easy to train and
+                plays well with other dogs. I also think that Bethany’s early training with the puppies made our lives
+                so much easier. Kylo quickly adjusted to living in a busy city and it was easy to start training him
+                since he already knew the clicker." -C.B.</p>
+            <p class="review">"I have to say I had a great experience dealing with you, and would recommend you to
+                others. You communicated regularly, readily available , easy to reach, responded quickly and took time
+                to answer questions. Your care and concern for the dogs really came through in all your communications
+                and photos, and was a big factor in providing confidence and trust required for a breeder. I appreciated
+                Your chronicling of the pregnancy, birth and first weeks. Sharing those moments really showed your care,
+                concern and love for the animals, and provided confidence of your intentions as a breeder. I was also
+                very thankful for extra communications you sent providing information about puppy behavior, training and
+                handling. It really is a testament to your commitment to raising well adjusted dogs." -J.S.</p>
+            <p class="review">"This was my first time adopting a puppy and I couldn't have asked for a better
+                experience. Bethany was extremely informative and willing to introduce me to the pups through zoom and
+                in-person, not to mention answering all of my questions. Benny was well-mannered when I brought him home
+                thanks to her Puppy Culture training, waiting patiently for food from the start which I can tell has
+                stuck with him. Would highly recommend if you want a beautiful, loyal, healthy, smart-yet-quirky,
+                social, athletic companion with a fun personality." -B.D.</p>
+            <p class="review">"We were so happy to find Spencer and Bethany who were planning their first litter with
+                their female Australian Shepherd. We didn't care which one, last of the pick was fine with us. However,
+                they wanted to match personality with future home expectations, so they recommended a specific pup. We
+                went with their choice. So glad we did! The preparation of puppy behavior was incredible. Just a couple
+                training days and we are a pack! We wouldn't trade Sammy for a million bucks." -W.C.</p>
+            <p class="review">"I have to tell you, you have created the best dog ever! We moved,
+                yesterday..and..today..our pup was amazing! He watched everything going on, he danced and played and
+                stayed out of the movers way. He loves his new home. He now walks almost exclusively off leed, or drags
+                his leash behind him. He listens to commands better than any dog I have ever had, and I have had many
+                wonderful dogs. He loves everyone and every animal... You bred the perfect dog...at nine months old!
+                Amazing, just amazing. Thank you!" - L.M.</p>
         </div>
     </div>
 
+    <!-- The "Future Litters" section of the website. -->
     <div id="futureLitters" class="sectionContainer borderColors">
-        <div class="ourProgram-Text">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid sed cupiditate eligendi nihil incidunt,
-                id quo sequi rerum tenetur recusandae sint aut perspiciatis soluta, eaque iste tempora numquam ut ullam!
+        <h1 class="cardTitle">Planned Upcoming Litters</h1>
+        <div class="dogText">Fall 2023 - Sona x Brick</div>
+        <div class="cardText">
+            <p>This will be Sona's second pairing with Brick. Sona is our precious first of the line, a pure-bread
+                Australian Shepherd, and Brick is a gorgeous, copper-coated Golden Retriever.
             </p>
         </div>
-        <img src="assets/Calgary.png" alt="Calgary">
-    </div>
-
-    <div id="FAQ" class="sectionContainer borderColors">
-        <img src="assets/bethany.png" alt="Bethany">
-        <div class="aboutUs-Text">
-            <p>Hello, my name is Bethany :) <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                inventore voluptatem ea nemo vel aut id vero saepe sint consequuntur, hic magnam minima nisi ipsum nulla
-                quas optio cupiditate dignissimos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nostrum
-                vel sit. Voluptatem, pariatur impedit qui culpa sapiente laboriosam earum dicta mollitia eaque accusamus
-                optio dolores officia et cum a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro saepe a
-                labore nam quas suscipit atque quaerat. Hic illum explicabo perspiciatis dolor praesentium ea corporis
-                eius, temporibus perferendis vel eveniet.</p>
+        <div class="dogText">Fall 2023 - Koey x Brick</div>
+        <div class="cardText">
+            <p>Really excited about Koey's debut litter! Koey is the direct offspring of Sona from her very first
+                litter. This cross will heavily develop the gentle, family-oriented traits everyone loves about Golden
+                Retirevers...with a chance for yellow puppies!
+            </p>
+        </div>
+        <div class="dogText">Spring 2024 - Haven x Calgary</div>
+        <div class="cardText">
+            <p>This is the drumroll litter right here. Haven and Calgary are the culmination of years of research, work,
+                and line-development, and we are expecting something really special with this pair.
+            </p>
         </div>
     </div>
 
+    <!-- The "FAQ" section of the website. -->
+    <div id="FAQ" class="sectionContainer">
+        <h1 class="cardTitle">Frequently Asked Questions</h1>
+        <div class="cardText">
+            <h2 class="question">Where are you located?</h2>
+            <p>We live just outside of South Hill, VA in Mecklenburg County, just a short drive to the NC state border.
+                It's a little over an hour or so to Richmond Airport and Raleigh-Durham airport.</p>
+            <br>
+            <h2 class="question">How much do your puppies cost?</h2>
+            <p>We really wish it were easier to provide a simple answer to this question. It's not as easy as just
+                displaying a price-tag, because it tells you nothing about the actual value of the puppy. Our program is
+                the result of countless hours of research, dialogue, practice, testing, working through curriculums,
+                experimentation, tears, and prayers, and we can't provide a dollar amount without you first
+                understanding exactly what you're getting when you get a Sweet Baby. To learn more about our program and
+                our prices, feel free to download and read through our <a href="assets/sweetbabykennels.pdf"
+                    target="_blank" style="color:#C97C5D">full documentation</a> and send us an email if you have any
+                questions not answered there.</p>
+            <br>
+            <h2 class="question">Can you ship a puppy out of state?</h2>
+            <p>Simple answer? YES. Complicated answer? Yes-ish. There are options available for both ground and air
+                transport of puppies, but the terms vary significantly (especially via airline). If you live outside of
+                VA and are interested in a flight nanny to bring you your puppy, send us an email and we will provide
+                contact details for groups we've looked into with very reasonable prices. On occasion, my husband has
+                agreed to drive puppies to their new owners, assuming the trip there and back can be accomplished within
+                a day.</p>
+            <br>
+            <h2 class="question">I live internationally. Can I still get a puppy?</h2>
+            <p>Simple answer? Maybe. Complicated answer? Probably not. We cannot assume any liability for incidents
+                related to the mountain of red-tape that usually accompanies attempts to ship dogs internationally, and
+                we must leave the full responsibility to the buyer to thoroughly research and make sure they understand
+                any and all laws pertaining to international animal cargo. That with those peculiar airline requirements
+                mentioned above usually renders it too difficult and/or too expensive to transport animals this way. But
+                technically...yes. It can happen.</p>
+            <br>
+            <h2 class="question">How big do your puppies get?</h2>
+            <p>The smallest our lines have produced is probably Haven, who is currently 45 pounds. The largest we've
+                seen is upwards of 60 pounds, so the weights and sizes fluctuate inside that range. When Calgary is
+                ready to stud, we will probably see a significant increase in dog weight because we anticipate him being
+                a big boy. Haven might help balance out that size increase significantly.</p>
+            <br>
+            <h2 class="question">How much do Golden Aussies shed?</h2>
+            <p>Significantly so, but not as much as Golden Retrievers. Sona molts twice a year, so for two weeks, we are
+                in hairmageddon with her, but in-between moltings, she barely sheds at all. That's typical for many
+                Australian Shepherds. Golden Retirevers, however, are like the snow in Canada. There ain't no way you're
+                getting rid of it. This mix results in a blending of those two coat types, and individual puppies might
+                lean more towards one type or the other. It's almost impossible to tell which type they will lean
+                towards until after they have gone home, but we are getting better over time at noticing it. Either way,
+                warm up your vacuum, because it's gonna do some work.</p>
+            <br>
+            <h2 class="question">I live in an apartment. Does this breed do well in apartment settings?</h2>
+            <p>Generally speaking, we've seen families that live in apartments have wonderful success with Golden
+                Aussies. As a breed, they do well in an apartment as long as they get some attention from the family.
+                Just be warned that indications from the dog that they need outside relief should be heeded immediately,
+                because it can take a while to get them downstairs and outside, depending on what floor your apartment
+                is on. Particular success or difficulty in apartment living would come down to the unique
+                characteristics of each puppy. If you live in an apartment and are interested in putting a deposit down
+                on a puppy, let us know and we can work with you to find the puppy who would have the most success in
+                your living situation.</p>
+            <br>
+            <h2 class="question">How can I stay up to date on future litters?</h2>
+            <p>Information is pushed regularly through our facebook page, as well as here on this website, but if you
+                want insider news, we do have things like waiting lists for individual planned litters. Send us an email
+                if you want to stay in touch and we'll talk through options.</p>
+            <br>
+        </div>
+    </div>
+    
+    <!-- The "Contact" section of the website. No mail services are currently available, so at push, this container will be set to invisible so its contents can't be used, -->
+    <div id="Contact" class="sectionContainer borderColors">
+        <h1 style="text-align:center">Send us a message and let's talk!</h1>
+        <form>
+            <label for="fullName">Full name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+            <label for="emailAddress">Email Address:</label><br>
+            <input type="email" id="emailAddress" name="emailAddress" required><br>
+            <label for="subject">I'd like to talk about:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="message">Your message:</label><br>
+            <textarea id="message" name="message" rows="8" cols="80" required></textarea>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 
