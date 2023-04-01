@@ -9,28 +9,31 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
     </style>
-    <title>Sweet Baby Kennels</title>
-    <meta name="keywords" content="Golden, Aussie, Aussies, Golden-Aussie, Golden-Aussies, Australian, Retriever, Puppies, Kennel, Kennels, Dog, Dogs, Breeder, Ethical, Puppy, Culture">
-    <meta name="description" content="A massive undertaking begun in 2019, Sweet Baby Kennels exists to glorify God by breeding beautiful,
-        family-friendly Golden Aussie puppies. We love the lines we've produced, and we love the lives we've changed!">
-        <meta name="author" content="Spencer Johnson">
-    </head>
+    <title>Goshen Golden Aussies</title>
+    <meta name="keywords"
+        content="Golden, Aussie, Aussies, Golden-Aussie, Golden-Aussies, Australian, Retriever, Puppies, Kennel, Kennels, Dog, Dogs, Breeder, Ethical, Puppy, Culture">
+    <meta name="description"
+        content="A massive undertaking begun in 2019, Goshen Golden Aussies exists to glorify God by breeding beautiful, family-friendly Golden Aussie puppies. We love the lines we've produced, and we love the lives we've changed!">
+    <meta name="author" content="Spencer Johnson">
+    <meta property="og:image" content="assets\SweetBabyKennels_-_Logo.png" />
+    <link rel="icon" type="image/x-icon" href="assets\iconified\favicon.ico">
+</head>
 
 <body>
     <!-- Produces a button with a Paw Print background. Clicking this button returns the viewer to the very top of the web page -->
     <img src="assets/pawprintbutton.png" class="upButton" alt="Return to Top"
         onClick="document.getElementById('header').scrollIntoView({ behavior: 'smooth'});">
 
-        <!-- Header section. Includes the main logo, name of the kennel, a slogan, and a link to the company Facebook page -->
+    <!-- Header section. Includes the main logo, name of the kennel, a slogan, and a link to the company Facebook page -->
     <div class="header" id="header">
         <img src="assets/logo.png" alt="Kennel Logo" class="borderColors">
         <div class="brand">
-            <h2>Sweet Baby Kennels</h2>
-            <div class="slogan"><em>"...you bred the perfect dog!" -L.M.</em></div>
+            <h2>Goshen Golden Aussies</h2>
+            <div class="slogan"><em>"...you created the perfect dog!" -L.M.</em></div>
         </div>
         <!-- Button to jump to the Facebook page -->
-        <a href="https://www.facebook.com/GoldenAussies/" target="_blank"><img src="assets/fbicon.png"
-                class="fbLogo" alt="Facebook Logo"></a>
+        <a href="https://www.facebook.com/GoldenAussies/" target="_blank"><img src="assets/fbicon.png" class="fbLogo"
+                alt="Facebook Logo"></a>
     </div>
     <!-- Navigation bar menu items -->
     <div class="navBar-Container">
@@ -50,13 +53,14 @@
         <h3 class="navItem" onClick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth'});">Contact
             Us</h3>
     </div>
-<!-- The "About Us" section of the website. -->
+    <!-- The "About Us" section of the website. -->
     <div id="aboutUs" class="sectionContainer borderColors">
         <h1 class="cardTitle">About Us</h1>
         <div class="cardContents needShrink">
             <img src="assets/bethany.png" alt="Bethany">
             <div class="cardText">
-                <p>Hello! My name is Bethany and I am the proud founder of Sweet Baby Kennels located near South Hill,
+                <p>Hello! My name is Bethany and I am the proud founder of Goshen Golden Aussies located near South
+                    Hill,
                     VA.</p><br>
                 <p>I fell in love with the
                     idea of Golden Aussies over 3 years ago. We carefully selected our Sona (Australian Shepherd)
@@ -201,7 +205,7 @@
                     Golden Aussie will yield second-generation Golden Aussies. She was "Winter" in our "Famous TV
                     Animals litter.</p>
             </div>
-                        <!-- A photo carousel of images just for the above dog. -->
+            <!-- A photo carousel of images just for the above dog. -->
             <div class="dogPhotoContainer">
                 <div class="slideshow-container">
                     <div class="koeySlides fade">
@@ -235,7 +239,7 @@
                     our current litters and wetting everyone's faces. And hands. And socks. She was "Sea Side" in our
                     "Dominion Expansions" litter.</p>
             </div>
-                        <!-- A photo carousel of images just for the above dog. -->
+            <!-- A photo carousel of images just for the above dog. -->
             <div class="dogPhotoContainer">
                 <div class="slideshow-container">
                     <div class="havenSlides fade">
@@ -273,6 +277,7 @@
                     href="https://www.huntingcreekkennels.com/Studs/Gallery" target="_blank"
                     style="color:#C97C5D">Brick</a>. Send us an email to find out what puppies are still available.
             </p>
+            <h1>**This litter has all gone to be with their forever families. Check the Future Litters section for news on upcoming generations**</h1>
         </div>
         <!-- An image carousel showing pictures of current available puppies. -->
         <div class="dogPhotoContainer">
@@ -484,11 +489,12 @@
             <br>
         </div>
     </div>
-    
+
     <!-- The "Contact" section of the website. No mail services are currently available, so at push, this container will be set to invisible so its contents can't be used, -->
     <div id="Contact" class="sectionContainer borderColors">
-        <h1 style="text-align:center">Send us a message and let's talk!</h1>
-        <form>
+        <h1 style="text-align:center; margin:5px">Send us a message and let's talk!</h1>
+        <h1 style="text-align:center; margin:5px">goshengoldenaussies@gmail.com</h1>
+        <!-- <form>
             <label for="fullName">Full name:</label><br>
             <input type="text" id="fullName" name="fullName" required><br>
             <label for="emailAddress">Email Address:</label><br>
@@ -497,7 +503,7 @@
             <input type="text" id="subject" name="subject" required><br>
             <label for="message">Your message:</label><br>
             <textarea id="message" name="message" rows="8" cols="80" required></textarea>
-        </form>
+        </form> -->
     </div>
     <script src="script.js"></script>
 </body>
