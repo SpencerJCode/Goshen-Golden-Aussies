@@ -59,9 +59,9 @@
         <div class="cardContents needShrink">
             <img src="assets/bethany.png" alt="Bethany">
             <div class="cardText">
-                <p>Hello! My name is Bethany and I am the proud founder of Goshen Golden Aussies located near South
-                    Hill,
-                    VA.</p><br>
+                <p>Hello! I'm Bethany, the proud founder of Goshen Golden Aussies, an honored Shadlowlands affiliate, located near South
+                    Hill, VA.</p>
+                <br>
                 <p>I fell in love with the
                     idea of Golden Aussies over 3 years ago. We carefully selected our Sona (Australian Shepherd)
                     knowing we
@@ -188,7 +188,7 @@
                 </div>
 
             </div>
-            <div class="dogText">Koey</div>
+            <div class="dogText" id="Koey">Koey</div>
             <div class="cardText">
                 <p>Oh my beating heart! She stole our affections very early in Sona's first litter, and we just had to
                     keep her. Her body style leans heavily toward Golden Retriever, as does her coat style and severe
@@ -262,17 +262,20 @@
     <div id="currentLitters" class="sectionContainer borderColors">
         <h1 class="cardTitle">Current Litters</h1>
         <div class="cardText">
-            <p>Born on January 16th, our "Narnia" litter is currently available. Each pup is named after a famous
-                character from one of CS Lewis' Chronicles of Narnia books. The dam is <span
-                    onClick="document.getElementById('Sona').scrollIntoView({ behavior: 'smooth'});"
-                    style="color:#C97C5D; text-decoration: underline; cursor: pointer">Sona</span>, and the sire is <a
+            <p><span
+                onClick="document.getElementById('Koey').scrollIntoView({ behavior: 'smooth'});"
+                style="color:#C97C5D; text-decoration: underline">Koey's</span> inaugural litter is due October 22nd, with a "go-home" date close to Christmas! We just HAVE to find a
+                Christmas theme for this litter! With <a
                     href="https://www.huntingcreekkennels.com/Studs/Gallery" target="_blank"
-                    style="color:#C97C5D">Brick</a>. Send us an email to find out what puppies are still available.
+                    style="color:#C97C5D">Brick</a> as the sire, we're really excited to see what comes from this pairing. Check back regularly to see photos when the litter drops!
             </p>
-            <h1>**This litter has all gone to be with their forever families. Check the Future Litters section for news on upcoming generations**</h1>
+            <h1>**This litter has not been born yet, but we are expecting puppies any minute now!**</h1>
+        </div>
+        <div class="dogPhotoContainer">
+            <img src="assets/mystery_pup.jpg" class="smallIMG" alt="Mystery Pup">
         </div>
         <!-- An image carousel showing pictures of current available puppies. -->
-        <div class="dogPhotoContainer">
+        <!-- <div class="dogPhotoContainer">
             <div class="slideshow-container">
                 <div class="currentLitterSlides fade">
                     <img src="assets/lucy.png" class="largeIMG" alt="Picture of Lucy">
@@ -310,12 +313,13 @@
                 <span class="dotCurrent"></span>
                 <span class="dotCurrent"></span>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- The "Past Litters" section of the website. -->
     <div id="pastLitters" class="sectionContainer borderColors">
         <h1 class="cardTitle">Past Litters</h1>
+        <p style="text-align: center;">Photos of our past litters. </p>
         <!-- An image carousel showing puppies from previous litters that have fully grown. -->
         <div class="dogPhotoContainer">
             <div class="slideshow-container">
@@ -349,7 +353,7 @@
             </div>
         </div>
         <div class="cardText">
-            <p style="text-align: center;">Photos of our past litters. <br> We absolutely love receiving photos and
+            <p style="text-align: center;"><br> We absolutely love receiving photos and
                 updates from
                 previous litters. We truly love all of our puppies and it is delightful to see their progress as they
                 grow and hear from their new families about how their expierence has been, both with finding a new
@@ -394,23 +398,23 @@
     <!-- The "Future Litters" section of the website. -->
     <div id="futureLitters" class="sectionContainer borderColors">
         <h1 class="cardTitle">Planned Upcoming Litters</h1>
-        <div class="dogText">Fall 2023 - Sona x Brick</div>
-        <div class="cardText">
-            <p>This will be Sona's second pairing with Brick. Sona is our precious first of the line, a pure-bread
-                Australian Shepherd, and Brick is a gorgeous, copper-coated Golden Retriever.
-            </p>
-        </div>
-        <div class="dogText">Fall 2023 - Koey x Brick</div>
+        <div class="dogText">Late 2023 - Koey x Brick</div>
         <div class="cardText">
             <p>Really excited about Koey's debut litter! Koey is the direct offspring of Sona from her very first
                 litter. This cross will heavily develop the gentle, family-oriented traits everyone loves about Golden
                 Retirevers...with a chance for yellow puppies!
             </p>
         </div>
-        <div class="dogText">Spring 2024 - Haven x Calgary</div>
+        <div class="dogText">Early 2024 - Haven x Calgary</div>
         <div class="cardText">
             <p>This is the drumroll litter right here. Haven and Calgary are the culmination of years of research, work,
                 and line-development, and we are expecting something really special with this pair.
+            </p>
+        </div>
+        <div class="dogText">Early 2024 - Koey x Calgary</div>
+        <div class="cardText">
+            <p>Expecting some amazing, tender, gentle "dog-head-always-in-your-lap" kinds of puppies from this pairing, with
+                a full-suite of surprising color patterns.
             </p>
         </div>
     </div>
@@ -429,9 +433,8 @@
                 the result of countless hours of research, dialogue, practice, testing, working through curriculums,
                 experimentation, tears, and prayers, and we can't provide a dollar amount without you first
                 understanding exactly what you're getting when you get a Sweet Baby. To learn more about our program and
-                our prices, feel free to download and read through our <a href="assets/sweetbabykennels.pdf"
-                    target="_blank" style="color:#C97C5D">full documentation</a> and send us an email if you have any
-                questions not answered there.</p>
+                our prices, feel free to send us an email telling us a little about yourself and we'd be thrilled to
+                talk you through the process!</p>
             <br>
             <h2 class="question">Can you ship a puppy out of state?</h2>
             <p>Simple answer? YES. Complicated answer? Yes-ish. There are options available for both ground and air
