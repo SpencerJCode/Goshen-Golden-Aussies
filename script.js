@@ -1,8 +1,8 @@
 let slideIndexSona = 0;
-let slideIndexKoey =0;
-let slideIndexHaven=0;
-let slideIndexCalgary=0;
-let slideIndexPastLitter=0;
+let slideIndexKoey = 0;
+let slideIndexHaven = 0;
+let slideIndexCalgary = 0;
+let slideIndexPastLitter = 0;
 var timeout = 8000;
 showSonaSlides();
 showKoeySlides();
