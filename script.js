@@ -1,11 +1,13 @@
 let slideIndexSona = 0;
 let slideIndexKoey =0;
 let slideIndexHaven=0;
+let slideIndexCalgary=0;
 let slideIndexPastLitter=0;
 var timeout = 8000;
 showSonaSlides();
 showKoeySlides();
 showHavenSlides();
+showCalgarySlides();
 showPastLitterSlides();
 
 function showSonaSlides() {
@@ -57,6 +59,23 @@ function showKoeySlides() {
     slides[slideIndexHaven-1].style.display = "block";  
     dots[slideIndexHaven-1].className += " active";
     setTimeout(showHavenSlides, timeout); 
+  }
+
+  function showCalgarySlides() {
+    let i;
+    let slides = document.getElementsByClassName("calgarySlides");
+    let dots = document.getElementsByClassName("dotCalgary");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndexCalgary++;
+    if (slideIndexCalgary > slides.length) {slideIndexCalgary = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexCalgary-1].style.display = "block";  
+    dots[slideIndexCalgary-1].className += " active";
+    setTimeout(showCalgarySlides, timeout); 
   }
   
 function showPastLitterSlides() {
