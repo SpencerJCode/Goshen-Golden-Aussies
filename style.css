@@ -336,5 +336,7 @@ input, textarea {
 }
 
 .smallIMG {
-    height:310px;
+    max-width:470px;
+    margin: 0 auto;
+    margin-bottom: 8px;
 }
