@@ -23,7 +23,7 @@ img {
     border-top: ridge 3px #efe3d9;
     border-left: ridge 3px #171717;
     border-bottom: ridge 3px #646261;
-    border-right: ridge 3px #ae8212;
+    border-right: ridge 3px #955e16;
 }
 
 .upButton {
@@ -39,7 +39,7 @@ img {
 }
 
 .upButton:hover {
-    background-color: #ae8212;
+    background-color: #955e16;
     opacity: .7;
 }
 
@@ -85,7 +85,7 @@ p {
     border-top: ridge 2px #efe3d9;
     border-left: ridge 2px #171717;
     border-bottom: ridge 2px #646261;
-    border-right: ridge 2px #ae8212;
+    border-right: ridge 2px #955e16;
 }
 
 .header {
@@ -105,7 +105,7 @@ p {
 .brand {
     width:500px;
     height: 36px;
-    border-bottom: solid 2px #ae8212;
+    border-bottom: solid 2px #955e16;
     margin-bottom: 12px;
 }
 
@@ -119,7 +119,7 @@ p {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-style: italic;
-    color: #ae8212;
+    color: #955e16;
 }
 
 @media only screen and (max-width: 640px) {
@@ -158,7 +158,7 @@ p {
     }
 
 .navItem:hover {
-    background-color: #ae8212;
+    background-color: #955e16;
     color: white;
     border-radius: 10px;
 }
@@ -184,7 +184,7 @@ p {
     text-align: center;
     width:100%;
     font-size: 26px;
-    background-color: #ae8212;
+    background-color: #955e16;
     color: #efe3d9;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -209,7 +209,7 @@ p {
 .dogText {
     font-size: 38px;
     text-decoration: underline;
-    color: #ae8212;
+    color: #955e16;
     font-family: Accordance;
     margin: 5px;
 }
@@ -306,19 +306,19 @@ img {vertical-align: middle;}
 
 #FAQ {
     border-radius: 15px;
-    border: solid 2px #ae8212;
+    border: solid 2px #955e16;
 }
 
 .question {
     font-size: 20px;
     text-decoration: underline;
-    color: #ae8212;
+    color: #955e16;
     text-align: left;
 }
 
 
 input, textarea {
-    border: solid 2px #ae8212;
+    border: solid 2px #955e16;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
