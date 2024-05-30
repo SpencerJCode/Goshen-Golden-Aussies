@@ -125,7 +125,7 @@ p {
 }
 
 .navItem{
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .navBar-Container {
@@ -149,7 +149,7 @@ p {
     margin-bottom: 20px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
-    max-width: 480px;
+    max-width: 470px;
 }
 
 .cardTitle {
