@@ -150,11 +150,11 @@ p {
 }
 
 .sectionContainer {
-    margin-bottom: 20px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     width: 97% !important;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .cardTitle {
@@ -194,7 +194,6 @@ p {
 .dogPhotoContainer{
     display: flex;
     flex-direction: column;
-
 }
 .dogPhotoContainer > * > * > img {
     border-radius: 15px;
