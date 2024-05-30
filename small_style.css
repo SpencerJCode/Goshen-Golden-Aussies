@@ -56,11 +56,13 @@ img {
 
 
 .largeIMG {
-    height:290px;
+    max-height:330px;
+    max-width: 420px;
 }
 
 .medIMG {
-    height:290px;
+    max-height:290px;
+    max-width: 380px;
 }
 
 body {
