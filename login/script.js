@@ -28,11 +28,12 @@ function submitButtonClick() {
     }
     if(valid){
       if(i==0) {
+        window.sessionStorage.setItem("token","DKj6YV$TdC8;e~Nd^*pLdxz6?~vFJ3");
         window.location.assign("http://www.goshengoldenaussies.com/internal/koey.html");
       }
       else if (i==1) {
+        window.sessionStorage.setItem("token","$jXY2uOA~8&,Gy5H;6/4#eC{{[q,Je");
         window.location.assign("http://www.goshengoldenaussies.com/internal/haven.html");
-
       }
     }
     else {
