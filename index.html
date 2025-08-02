@@ -310,20 +310,19 @@
     <!-- The "Current Litters" section of the website. -->
     <div id="currentLitters" class="sectionContainer borderColors">
         <h1 class="cardTitle">Current Litters</h1>
-        <!--<div class="cardText">
-            <p><span
-                onClick="document.getElementById('Koey').scrollIntoView({ behavior: 'smooth'});"
-                style="color:#C97C5D; text-decoration: underline">Koey</span> and <span
-                onClick="document.getElementById('Haven').scrollIntoView({ behavior: 'smooth'});"
-                style="color:#C97C5D; text-decoration: underline">Haven</span> are currently nursing puppies! 
-                Koey's litter theme is 'Coffee', and we just love the coffee-themed names we've chosen. Haven's theme 
-                is currently TBD, but stay tuned! Photos on facebook!
+        <div class="cardText">
+            <p>
+                <span onClick="document.getElementById('Haven').scrollIntoView({ behavior: 'smooth'});" style="color:#C97C5D; text-decoration: underline">
+                    Haven
+                </span> is currently nursing puppies! 
+                Haven's litter theme is 'Pride and Prejudice', and we just loved picking names for the puppies and talking about the movies! We might be a
+                little prejudiced...but our favorite production is the 1995 BBC one with Colin Firth. Litter pics are on facebook!
             </p>
         </div>
-        <div class="dogPhotoContainer">
-            <img src="assets/koey_litter.jpg" class="smallIMG" alt="Koey's Litter">
-        </div>-->
-        <div class="cardText">No current litters! Stay tuned for updates!</div>
+        <div style = "display: flex; flex-direction: row; align-items: center; justify-content: center;" >
+            <img src="assets/HavenLitter1.jpeg" class="medIMG" alt="Picture of Haven's Litter">
+        </div>
+        <!--<div class="cardText">No current litters! Stay tuned for updates!</div>-->
     </div>
 
     <!-- The "Past Litters" section of the website. -->
@@ -334,6 +333,18 @@
         <div class="dogPhotoContainer">
             <div class="slideshow-container">
                 <div class="pastLitterSlides fade">
+                    <img src="assets/ValJean.jpeg" class="medIMG" alt="Picture of ValJean" onclick="advancePastLitterSlides()">
+                </div>
+                <div class="pastLitterSlides fade">
+                    <img src="assets/Oreo.jpeg" class="medIMG" alt="Picture of Oreo" onclick="advancePastLitterSlides()">
+                </div>
+                <div class="pastLitterSlides fade">
+                    <img src="assets/Biscotti.jpeg" class="medIMG" alt="Picture of Biscotti" onclick="advancePastLitterSlides()">
+                </div>
+                <div class="pastLitterSlides fade">
+                    <img src="assets/Bishop.png" class="medIMG" alt="Picture of Bishop" onclick="advancePastLitterSlides()">
+                </div>
+                <div class="pastLitterSlides fade">
                     <img src="assets/adventure.png" class="medIMG" alt="Picture of Adventure" onclick="advancePastLitterSlides()">
                 </div>
                 <div class="pastLitterSlides fade">
@@ -341,6 +352,9 @@
                 </div>
                 <div class="pastLitterSlides fade">
                     <img src="assets/flicka.png" class="medIMG" alt="Picture of Flicka" onclick="advancePastLitterSlides()">
+                </div>
+                <div class="pastLitterSlides fade">
+                    <img src="assets/Russel.jpeg" class="medIMG" alt="Picture of Russel" onclick="advancePastLitterSlides()">
                 </div>
                 <div class="pastLitterSlides fade">
                     <img src="assets/hinterlands.png" class="medIMG" alt="Picture of Hinterlands" onclick="advancePastLitterSlides()">
@@ -494,6 +508,9 @@
             <h2 class="question">How can I stay up to date on future litters?</h2>
             <p>Information is pushed regularly through our facebook page, as well as here on this website, but if you
                 want insider news, we do have a master email list for people who want updates as early as possible.</p>
+            <br>
+            <h2 class="question">Can I pay more to get the exact puppy I want?</h2>
+            <p>No.</p>
             <br>
         </div>
     </div>
