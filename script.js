@@ -1,11 +1,11 @@
 let slideIndexSona = 0;
-let slideIndexKoey = 0;
+//let slideIndexKoey = 0;
 let slideIndexHaven = 0;
 let slideIndexCalgary = 0;
 let slideIndexPastLitter = 0;
 var timeout = 8000;
 showSonaSlides();
-showKoeySlides();
+//showKoeySlides();
 showHavenSlides();
 showCalgarySlides();
 showPastLitterSlides();
@@ -42,7 +42,7 @@ function advanceSonaSlides() {
   dots[slideIndexSona-1].className += " active";
 }
 
-function showKoeySlides() {
+/*function showKoeySlides() {
   let i;
   let slides = document.getElementsByClassName("koeySlides");
   let dots = document.getElementsByClassName("dotKoey");
@@ -57,9 +57,9 @@ function showKoeySlides() {
   slides[slideIndexKoey-1].style.display = "block";  
   dots[slideIndexKoey-1].className += " active";
   setTimeout(showKoeySlides, timeout); 
-}
+}*/
 
-function advanceKoeySlides() {
+/*function advanceKoeySlides() {
   let slides = document.getElementsByClassName("koeySlides");
   let dots = document.getElementsByClassName("dotKoey");
   for (i = 0; i < slides.length; i++) {
@@ -72,7 +72,7 @@ function advanceKoeySlides() {
   }
   slides[slideIndexKoey-1].style.display = "block";  
   dots[slideIndexKoey-1].className += " active";
-}
+}*/
   
 function showHavenSlides() {
   let i;
